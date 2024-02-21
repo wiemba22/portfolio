@@ -34,7 +34,7 @@ const Navbar = () => {
                         <div className={`${!toggle ? 'hidden' : 'flex'} pt-5 w-full bg-tb p-5 z-20 text-right  rounded-xl`}>
                             <ul className=' list-none flex justify-end items-start flex-col gap-4'>
                                     {navLinks.map((link) => (
-                                            <li key={link.id} className={`text-white hover:text-primary font-popstext-[16px] cursor-pointer font-medium`} onClick={()=>{setActive(link.title);setToggle(!toggle);}}>
+                                            <li key={link.id} className={`text-white hover:text-primary font-pops text-[16px] cursor-pointer font-medium`} onClick={()=>{setActive(link.title);setToggle(!toggle);}}>
                                             <a href={`#${link.id}`}>{link.title}</a>
                                            </li>
               

@@ -10,7 +10,7 @@ const Certif = ({ title = "", more = [], img = "", description = "" }) => {
 
   return (
     <section >
-      <div className=" relative w-[300px] phone:w-[350px]  h-[550px] phone:h-[500px] bg-black flex flex-col items-center gap-4 justify-start pt-8 border-solid border-primary border-2 border-  rounded-lg text-white ">
+      <div className=" relative w-[300px] phone:w-[350px]  h-[600px] phone:h-[500px] bg-black flex flex-col items-center gap-4 justify-start pt-8 border-solid border-primary border-2 border-  rounded-lg text-white ">
         <h3 className="font-pops text-xl font-semibold">{title}</h3>
         <img src={img} alt="" className="w-1/3 h-1/4 " />
         <p className="font-pops font-light text-base px-7">{description}</p>
