@@ -12,7 +12,7 @@ import wave from '../assets/wavewhite.svg';
 import { EffectCoverflow, Pagination, Navigation } from "swiper/modules";
 
 const Projects = () => (
-  <section className="relative pb-10 w-screen h-fit flex flex-col md:gap-8 gap-4 items-center   bg-black ">
+  <section id='Projects' className="relative pb-10 w-screen h-fit flex flex-col md:gap-8 gap-4 items-center pb-32 bg-black ">
     <div className='w-full'>
       <img src={wave} alt="wave" className='w-full' />
     </div>

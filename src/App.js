@@ -18,7 +18,7 @@ function App() {
     // Simulate data loading delay
     setTimeout(() => {
       setLoading(false);
-    }, 2000);
+    }, 3000);
   }, []);
   return (
     

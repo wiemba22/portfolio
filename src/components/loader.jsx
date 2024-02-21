@@ -9,7 +9,7 @@ const Loader = () => {
           <PropagateLoader
             color="#f50b86"
             loading={true} 
-            size={15} 
+            size={25} 
           />
         </div>
       );
