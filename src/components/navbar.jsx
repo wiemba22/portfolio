@@ -1,11 +1,11 @@
 import shape from "../assets/shape.png"
-import logologo from "../assets/Pink_and_Black_Pink_Aesthetic_Flower_Shop_Logo-removebg-preview.png"
-import me from "../assets/me.jpg"
+
 import { navLinks } from "../const" 
 import {React,useState,useEffect} from "react"
 import { Link, link} from "react-router-dom"
 import menu from "../assets/menu.svg"
-import close from "../assets/close.svg" 
+import close from "../assets/close.svg"  
+import logo from '../assets/Blanc_et_Rose_Barré_Cosmétiques_Beauté_Logo-removebg-preview.png'
 const Navbar = () => {
     const [active,setActive] = useState("");
     const [toggle,setToggle] = useState(false);
@@ -13,9 +13,10 @@ const Navbar = () => {
        
             <div className="flex flex-row w-screen z-40 fixed top-0 "> 
                 <div className="w-2/6 h-16 bg-[#5D5D5D] opacity-80 flex flex-col items-center ">
+                    
                    <Link to ='/' onClick={()=>{setActive("");window.scrollTo(0,0)}}> 
                    
-                    <img src={logologo} alt="logo" className="  mt-[-20px] h-44  w-full " />
+                   
                     </Link>
                 </div>
                 <div className="w-4/6 h-16 bg-[#5D5D5D] opacity-80 flex flex-col items-center justify-center  ">

@@ -11,12 +11,12 @@ const Contact = () => {
     return (
         <section
             id="Contact"
-            className="bg-black relative w-screen h-fit  flex flex-col items-center justify-start  p-20 gap-16"
+            className="bg-black relative w-screen h-fit  flex flex-col items-center justify-start  p-16 gap-14 overflow-hidden"
         >
             <img
                 src={shape}
                 alt="shape"
-                className="absolute bottom-[10px] left-[-70px]  w-1/2 phone:w-1/4"
+                className="absolute bottom-[10px] left-[-70px]  w-1/3 phone:w-1/4"
             />
 
             <h1 className=" text-3xl phone:text-4xl md:text-7xl font-poppins bg-primary w-fit px-4 font-bold">

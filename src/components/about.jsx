@@ -1,33 +1,45 @@
 import wave from '../assets/wave.svg'
 import pink2 from '../assets/pink2.png'
-import black from '../assets/black.png'
+
+import girl from '../assets/girl.png';
 const About = () => {
-    return(
-        <section id='About' className="bg-white  w-screen h-fit  ">
+    return (
+        <section id='About' className="bg-white  w-screen h-full pb-32 ">
             <div className='w-full'>
-            <div className='bg-black hidden phone:block w-full h-[50px]'></div>
-            
+                <div className='bg-black hidden phone:block w-full h-[20px]'></div>
+
                 <img src={wave} alt="wave" className='w-full' />
             </div>
-            <div className='flex flex-row h-3/4 w-full md:justify-normal justify-center gap-10 lg:gap-20'>
-                <div className=' hidden md:block w-1/3 h-full mt-5 relative'>
-                    <img src={black} alt="black" className=' absolute top-16  left-8 lg:left-20 w-4/5' />
-                    <img src={pink2} alt="pink" className=' absolute left-14 lg:left-28  top-24 w-4/5 ' />
+
+            <div class="flex flex-row w-full justify-center items-center lg:gap-20 ">
+                <div class="hidden md:block w-1/3 mt-5">
+
+                    <img src={girl} alt="black" className=' w-full' />
+
                 </div>
-                
-    <div className=' relative w-3/4 phone:w-2/3 h-full  md:w-2/3'>
-                   
-                    <div className='md:pt-10 flex flex-col w-[93%]  h-full  gap-4 lg:gap-7'>
-                            <div className='font-poppins mt-10 font-bold text-xl phone:text-2xl md:text-[3vw] flex  flex-col lg:gap-2'>
-                                <h1 >Hello,want to </h1>
-                                <h1 className='flex flex-row items-center '> Know ,<h1 className=' bg-primary  text-nowrap text-white p-2'>who I am ?</h1></h1>
-                            </div>
-                            <h6 className=' font-poppins text-md phone:text-xl md:text-[2vw] leading-relaxed'>As a second-year computer engineering student, I am passionate about shaping an innovative future in a world where technology's potential is limitless. Beyond my technical prowess, I bring a rich set of soft skills to the table. With effective communication and a collaborative spirit, I embark on a continuous quest for knowledge, exploring computer science frontiers beyond the classroom. Thriving on challenges, I refine my technical skills through diverse projects and programming competitions, fostering teamwork, adaptability, and problem-solving. Join me in delving into the realm of complex systems. Together, let's navigate challenges with a commitment to innovation, empathy, and a fervent desire to make a meaningful impact on the world.</h6>
+
+
+                <div className=' w-2/3 md:w-1/2'>
+
+                    <div className=' h-full flex flex-col items-start w-full md:w-5/6 gap-4 lg:gap-8 pt-10'>
+                        <div className='font-pops mt-10 font-bold text-lg phone:text-2xl md:text-[2.5vw] '>
+                            <h1 >Hello,want to </h1>
+                            <h1 className='flex flex-row items-center '> Know ,<h1 className=' bg-primary  text-nowrap text-white p-2'>who I am ?</h1></h1>
+                        </div>
+                        <div>
+                            <h6 className='font-pops font-light text-md phone:text-xl md:text-[2vw] leading-relaxed'>
+                                As a pre-graduate computer engineer, I'm deeply fascinated by the world of technology, particularly in the realms of cybersecurity and machine learning. My passion lies in exploring how these fields intersect, and I'm eager to delve into projects and learning opportunities that allow me to further explore their potential. . My goal is to gain hands-on experience and deepen my understanding of these exciting areas as I progress in my academic and professional journey.
+                            </h6>
+                        </div>
+
                     </div>
                 </div>
 
             </div>
         </section>
-    
-    )}; 
-export default About ; 
+
+    )
+};
+export default About;
+
+

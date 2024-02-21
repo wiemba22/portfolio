@@ -27,6 +27,8 @@ code {
   background-size: cover;
   height: fit-content;
   width: 100%;
+  display: flex;
+
 }
 
 .slider-controler .slider-arrow {

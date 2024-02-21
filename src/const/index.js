@@ -1,10 +1,20 @@
-import webdev from '../assets/navigateur-internet.gif' 
-import prog from '../assets/structure-web.gif'
-import sec from '../assets/securite-des-utilisateurs.gif'
-import data from '../assets/laboratoire-virtuel.gif'
-import dscience from '../assets/statistiques.gif'
+import webdev from '../assets/web.gif' 
+import prog from '../assets/prog.gif'
+import sec from '../assets/sec.gif'
+import data from '../assets/data.gif'
+import dscience from '../assets/stat.gif'
 import other from '../assets/ellipsis.png'
-import java from '../assets/téléchargement-removebg-preview.png'
+import securite from '../assets/cyber.png'
+import db from '../assets/database.png'
+import ml from '../assets/science.png'
+import cyber1 from '../pdf/cyber sec 1.pdf'
+import cyber2 from '../pdf/cyber sec 2.pdf'
+import java from '../assets/java.png'
+import sql from '../pdf/sql.pdf'
+import inter from '../pdf/inter.pdf'
+import intro from '../pdf/intro.pdf'
+
+
 
 export const navLinks = [
     {
@@ -89,7 +99,7 @@ export const cards=[
       image:prog    },
     {
       titre:"Cyber Security",
-      skills:[{id:'Network Security',color:"#5CF5FF"},{id:'Risk Analysis',color:"#FFF2C2"},{id:'Cryptography',color:"#FFF2C2"},{id:'System Administration',color:"#FFF2C2"}],
+      skills:[{id:'Network Security',color:"#5CF5FF"},{id:'Cryptography',color:"#FFF2C2"},{id:'Risk Analysis',color:"#FFF2C2"},{id:'System Administration',color:"#FFF2C2"}],
       image:sec    },    
     {
       titre:"Databases",
@@ -117,4 +127,23 @@ export const cards=[
         techs:[{id:'HTML'},{id:'CSS'},{id:'Javascript'},{id:'MySQL'},{id:'PHP'}],
         description:"This website for the Pet Association of Tunisia, built with HTML, CSS, JavaScript, and PHP, offers an intuitive interface for pet adoption, events, education, and community forums. JavaScript adds dynamic elements for enhanced user experience, while PHP handles server-side processing and database interactions. The site promotes pet adoption and community engagement across Tunisia"
       }
+    ];
+    export const certifs =[
+      {title:"Cybersecurity",
+    img:securite,
+    description:"Cybersecurity safeguards computer systems and data from unauthorized access, attacks, and theft. It encompasses a range of measures, including technologies, processes, and education, to promote safe computing practices and mitigate risks.",
+    more:[{path:cyber1,id:'Foundations of Cybersecurity'},{path:cyber2,id:'Play It Safe:Manage Security Risks'}]
+  },
+      {
+        title:"Data Science",
+        img:ml,
+        description:"Data science is the practice of extracting insights and knowledge from data using statistical methods, algorithms, and computer science techniques. It helps businesses make informed decisions and solve complex problems by analyzing large datasets.",
+        more:[{path:intro,id:'Introduction to Python'},{path:inter,id:'Intermediate Python Programming'}]     
+      },
+      {
+        title:"Data Bases",
+        img:db,
+        description:"Databases are vital for storing, managing, and accessing data efficiently in computing. They're crucial for software applications, ensuring consistent storage, swift access, and reliable updates. With features like security and queries, databases support effective data management across industries.",
+        more:[{path:inter,id:'SQL'}]     
+      },
     ];

@@ -12,17 +12,16 @@ import wave from '../assets/wavewhite.svg';
 import { EffectCoverflow, Pagination, Navigation } from "swiper/modules";
 
 const Projects = () => (
-  <section className="relative pb-10 w-screen h-fit flex flex-col md:gap-16 gap-8 items-center   bg-black ">
+  <section className="relative pb-10 w-screen h-fit flex flex-col md:gap-8 gap-4 items-center   bg-black ">
     <div className='w-full'>
       <img src={wave} alt="wave" className='w-full' />
     </div>
-    <div className="w-fit h-fit bg-primary py-1 px-16">
-    <h1 className="text-white text-4xl  font-pops h-fit w-fit mb-5 md:mb-0">Projects</h1>
-    </div>
-    <img src={shape} alt="shape" className=" absolute  top-48 right-[-100px] w-1/4" />
+    
+    <h1 className="text-primary text-4xl  font-pops font-bold h-fit w-fit ">Projects</h1>
+    
+    <img src={shape} alt="shape" className=" absolute  top-48 left-[-100px] w-1/4" />
     <div className="w-full h-fit ">
       <Swiper
-
         centeredSlides={true}
         spaceBetween={30}
         slidesPerView={"auto"}
