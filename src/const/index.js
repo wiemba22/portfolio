@@ -13,6 +13,9 @@ import java from '../assets/java.png'
 import sql from '../pdf/sql.pdf'
 import inter from '../pdf/inter.pdf'
 import intro from '../pdf/intro.pdf'
+import certif from '../pdf/certif.pdf'
+import presec from '../pdf/THM1.pdf'
+import sec101 from '../pdf/THM2.pdf'
 
 
 
@@ -50,7 +53,18 @@ export const journies=[
     date:"2023 07-08",
     iconStyle:{background: '#f50b86', color: '#fff' },
     icon:"<WorkIcon/>",
-    title:"Stage d'étè",
+    title:"Summer internship",
+    subtitle:"CRESUS Sfax",
+    skills:"Chatbot,LLAMA,LLM,AI "
+  },
+  {
+    className:"vertical-timeline-element--work",
+    contentStyle:{ background: '#f50b86', color: '#fff' },
+    contentArrowStyle:{ borderRight: '7px solid  #f50b86' },
+    date:"2023 07-08",
+    iconStyle:{background: '#f50b86', color: '#fff' },
+    icon:"<WorkIcon/>",
+    title:"Summer internship",
     subtitle:"B2M-IT Cité Mahrajene",
     skills:"ERP,Microsoft Business central,Microsoft Dynamics NAV "
   },
@@ -61,9 +75,9 @@ export const journies=[
     date:"2022 - present",
     iconStyle:{background: '#f50b86', color: '#fff' },
     icon:"<SchoolIcon/>",
-    title:"Ecole d'Ingenieur",
+    title:"Engineering school",
     subtitle:"Enicarthage Charguia 2",
-    skills:"JAVA,Securité,Data Science,Développement web/mobile,SGBD"
+    skills:"Cybersecurity,Data ScienceSystem and network administration,Linux,CyberOps,Networking"
   },
   {
     className:"vertical-timeline-element--education",
@@ -72,9 +86,9 @@ export const journies=[
     date:"2020 - 2022",
     iconStyle:{background: '#f50b86', color: '#fff' },
     icon:"<SchoolIcon/>",
-    title:"Ecole Préparatoire",
+    title:"preparatory school",
     subtitle:"IPEIT Tunis",
-    skills:"Cycle MP"
+    skills:"Mathematics, Physics, Object Oriented Programming"
   },
   {
     className:"vertical-timeline-element--education",
@@ -83,35 +97,47 @@ export const journies=[
     date:"2016 - 2020",
     iconStyle:{background: '#f50b86', color: '#fff' },
     icon:"<SchoolIcon/>",
-    title:"Baccalauréat en enseignement secondaire",
-    subtitle:"Lycée Pilote Borguiba Tunis",
-    skills:"Bac Math"
+    title: "Baccalaureate in Secondary Education",
+    subtitle: "Pioneer High School of Borguiba, Tunis",
+    skills: "Mathematics Baccalaureate"
   },
 ];
 export const cards=[
+  {
+    titre: "Cyber Security",
+  skills: [
+    { id: 'Network Security', color: "#5CF5FF" },
+    { id: 'Cryptography', color: "#FFF2C2" },
+    { id: 'Risk Analysis', "color": "#FFF2C2" },
+    { id: 'Penetration Testing', "color": "#FFF2C2" }
+  ],
+  image: sec  },
+  {
+    titre:"Data Science/AI",
+    skills: [
+      {id: 'ML algorithms', color: "#5CF5FF"},
+      {id: 'Matplotlib', color: "#5CF5FF"},
+      {id: 'Keras', color: "#5CF5FF"},
+      {id: 'LLMs', color: "#5CF5FF"},
+      {id: 'PyTorch', color: "#5CF5FF"},
+      {id: 'Scikit-learn', color: "#5CF5FF"}
+    ],
+    image:dscience    },
   {
     titre:"Web development",
     skills:[{id:'HTML',color:"#5CF5FF"},{id:'CSS',color:"#5CF5FF"},{id:'JavaScript',color:"#5CF5FF"},{id:'ReactJS',color:"#5CF5FF"},{id:'NodeJS',color:"#5CF5FF"},{id:'Tailwind',color:"#5CF5FF"},{id:'Spring Boot',color:"#5CF5FF"}],
     image:webdev    },
     {
       titre:"Programming languages",
-      skills:[{id:'C',color:'#C2FFDE'},{id:'C++',color:"#C2FFDE"},{id:'Java',color:"#C2FFDE"},{id:'Python',color:"#C2FFDE"},{id:'JavaScript',color:"#C2FFDE"}],
+      skills:[{id:'C',color:'#C2FFDE'},{id:'C++',color:"#C2FFDE"},{id:'Java',color:"#C2FFDE"},{id:'Python',color:"#C2FFDE"},{id:'JavaScript',color:"#C2FFDE"},{id:'Bash Scripting',color:"#C2FFDE"}],
       image:prog    },
-    {
-      titre:"Cyber Security",
-      skills:[{id:'Network Security',color:"#5CF5FF"},{id:'Cryptography',color:"#FFF2C2"},{id:'Risk Analysis',color:"#FFF2C2"},{id:'System Administration',color:"#FFF2C2"}],
-      image:sec    },    
     {
       titre:"Databases",
       skills:[{id:'SQL',color:"#5CF5FF"},{id:'PostgresSQL',color:"#5CF5FF"},{id:'PLSQL',color:"#5CF5FF"},{id:'MySQL',color:"#5CF5FF"},{id:'Oracle',color:"#5CF5FF"},{id:'MangoDB',color:"#5CF5FF"}],
       image:data    },
-    {
-      titre:"Data Science",
-      skills:[{id:'Pandas',color:"#5CF5FF"},{id:'SciPy',color:"#5CF5FF"},{id:'ML algorithms',color:"#5CF5FF"},{id:'Matplotlib',color:"#5CF5FF"}],
-      image:dscience    },
       {
         titre:"Other",
-        skills:[{id:'Prpblem Solving',color:"#5CF5FF"},{id:'UML',color:"#5CF5FF"},{id:'ERP',color:"#5CF5FF"},{id:'Git',color:"#5CF5FF"},{id:'Management',color:"#5CF5FF"},{id:'Agile Methods',color:"#5CF5FF"}],
+        skills:[{id:'System Administration',color:"#5CF5FF"},{id:'UML',color:"#5CF5FF"},{id:'ERP',color:"#5CF5FF"},{id:'Git',color:"#5CF5FF"},{id:'Management',color:"#5CF5FF"},{id:'Agile Methods',color:"#5CF5FF"}],
         image:other    },
     ];
     export const prjs = [
@@ -132,13 +158,13 @@ export const cards=[
       {title:"Cybersecurity",
     img:securite,
     description:"Cybersecurity safeguards computer systems and data from unauthorized access, attacks, and theft. It encompasses a range of measures, including technologies, processes, and education, to promote safe computing practices and mitigate risks.",
-    more:[{path:cyber1,id:'Foundations of Cybersecurity'},{path:cyber2,id:'Play It Safe:Manage Security Risks'}]
+    more:[{path:cyber1,id:'Foundations of Cybersecurity'},{path:cyber2,id:'Play It Safe:Manage Security Risks'},{path:presec,id:'Pre Security'},{path:sec101,id:'Cyber Security 101'}]
   },
       {
-        title:"Data Science",
+        title:"Data Science/AI",
         img:ml,
         description:"Data science is the practice of extracting insights and knowledge from data using statistical methods, algorithms, and computer science techniques. It helps businesses make informed decisions and solve complex problems by analyzing large datasets.",
-        more:[{path:intro,id:'Introduction to Python'},{path:inter,id:'Intermediate Python Programming'}]     
+        more:[{path:intro,id:'Introduction to Python'},{path:inter,id:'Intermediate Python Programming'},{path:certif,id:'Machine Learning'}]     
       },
       {
         title:"Data Bases",

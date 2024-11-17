@@ -1,14 +1,14 @@
 import shape from "../assets/shape.png"
-import me from "../assets/me.jpg" 
+import me from "../assets/wiwi.jpg" 
 const Landing = () => {
     return(
         <section className="flex flex-col w-screen  h-screen overflow-x-hidden overflow-y-clip ">
         
 
-            <div className="h-full  relative flex flex-col gap-5 bg-black phone:gap-0 phone:flex-row phone:mt-0 pt-[64px] ">
+            <div className="h-full  relative flex flex-col gap-5 bg-black phone:gap-0 phone:flex-row phone:mt-0 ">
                 <div className=" w-full phone:w-2/6 h-full  flex flex-col items-center">
                     <img src={shape} alt="shape" className="absolute top-5 left-[-10px]  w-1/2 phone:w-1/4"/>
-                    <div className=" phone:hidden w-[250px] mt-8 border-solid border-primary  z-10 border-2 rounded-xl">
+                    <div className=" phone:hidden w-[250px] mt-8 border-solid border-primary   z-10 border-2 rounded-xl">
                          <img src={me} alt="me" className=" h-full w-full object-cover rounded-xl"/>
                     </div>
 

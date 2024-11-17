@@ -1,7 +1,7 @@
 import wave from '../assets/wave.svg'
 import pink2 from '../assets/pink2.png'
 
-import girl from '../assets/girl.png';
+import girl from '../assets/hijabi.png';
 const About = () => {
     return (
         <section id='About' className="bg-white  w-screen h-full pb-32 ">
@@ -12,7 +12,7 @@ const About = () => {
             </div>
 
             <div class="flex flex-row w-full justify-center items-center lg:gap-20 ">
-                <div class="hidden md:block w-1/3 mt-5">
+                <div class="hidden md:block w-1/3 mt-48">
 
                     <img src={girl} alt="black" className=' w-full' />
 
@@ -28,8 +28,14 @@ const About = () => {
                         </div>
                         <div>
                             <h6 className='font-pops font-light text-md phone:text-xl md:text-[2vw] leading-relaxed'>
-                                As a pre-graduate computer engineer, I'm deeply fascinated by the world of technology, particularly in the realms of cybersecurity and machine learning. My passion lies in exploring how these fields intersect, and I'm eager to delve into projects and learning opportunities that allow me to further explore their potential. . My goal is to gain hands-on experience and deepen my understanding of these exciting areas as I progress in my academic and professional journey.
-                            </h6>
+                            As a pre-graduate computer engineer in my final year,
+                             I am deeply passionate about cybersecurity and the critical 
+                             importance of securing digital systems. I am fascinated by 
+                             the ever-evolving landscape of cyber threats and the challenges they pose.
+                              My focus is on gaining practical experience and refining my skills in cybersecurity, 
+                              aiming to contribute to creating secure, resilient systems in a world that is increasingly
+                               reliant on technology. As I approach the end of my academic journey, I am excited to apply
+                                my knowledge in a professional setting and take the next step toward a career in cybersecurity.                            </h6>
                         </div>
 
                     </div>
